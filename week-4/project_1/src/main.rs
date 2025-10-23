@@ -4,6 +4,7 @@ use std::io;
 
 fn main() 
 {
+   println!("Quadratic equation format ax² + bx + c");
    let mut a = String::new();
    let mut b = String::new();
    let mut c = String::new();
