@@ -19,21 +19,18 @@ let codel = codel.trim().to_uppercase();
 println!("Enter the quantity you want:");
 let mut quant = String::new();
 io::stdin().read_line(&mut quant).expect("Failed to read quantity");
-let quant: f32 =  quant.trim().parse().expect("Invalid quantity entered");
+let mut  quant: f32 =  quant.trim().parse().expect("Invalid quantity entered");
+println!("Quantity: {}", quant);
 
-if quant >= 1.0 {
-    println!("You entered quantity {}", quant);
+while quant < 1.0 {
+        println!("Invalid quantity. Try again:");
+        let mut new_quant = String::new();
+        io::stdin().read_line(&mut new_quant).expect("Failed to read quantity");
+        quant = new_quant.trim().parse().expect("Invalid number entered");
+    }
 
-}
-else {
-    println!("Invalid quantity.Try again");
+    println!("Quantity: {}", quant);
 
-    let mut quant = String::new();
-    io::stdin().read_line(&mut quant).expect("Failed to read quantity");
-    let quant: f32 =  quant.trim().parse().expect("Invalid quantity entered");
-    println!("You entered quantity {}", quant);
-
-}
 
 
 let (item, price): (&str, f32) = match codel.as_str() {
