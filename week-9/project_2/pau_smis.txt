@@ -1,0 +1,6 @@
+Student Name         Matric Number   Department      Level
+Oluchi Nnordi        ACC1021111      Accounting      200  
+Adams Aliyu          ECO2010001      Economics       200  
+Shams Abiodun        ECO2010002      Economics       200  
+Adekunle Gode        ELE2020001      Electrical      200  
+Blanca Edemoh        MEE1020001      Mechanical      100  
