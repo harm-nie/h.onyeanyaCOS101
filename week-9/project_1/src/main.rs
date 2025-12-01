@@ -29,10 +29,7 @@ std::error::Error>> {
      writeln!(file,"{:<15} {:<15} {:<15}",header[0][0] )?;
     
 
-    writeln!(file, "{:<45}",".");
-     writeln!(file,)?;
-    for i in 0..drinks.len() { writeln!(file,"{:<15} {:<15} {:<15}",drinks[i][0],drinks[i][1],drinks[i][2]  )?;
-    }
+    Z
 
   
    println!("file written successpfully :)");

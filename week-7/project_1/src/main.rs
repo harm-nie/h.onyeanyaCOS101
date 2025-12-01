@@ -96,4 +96,4 @@ fn main() {
             println!("Invalid choice. Please select from  options 0-5.");
         }
     }
-}
+}  
